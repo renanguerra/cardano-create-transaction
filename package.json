@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bot": "node src/create-transaction.js",
+    "create-wallet": "node src/create-wallet.js",
+    "balance": "node src/get-balance.js",
+    "transactions": "node src/verify-NFT-received.js",
+    "nft": "node src/redeem-NFT.js"
   },
   "keywords": [],
   "author": "",
