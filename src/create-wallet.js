@@ -11,4 +11,6 @@ const createWallet = (account) => {
   return cardano.wallet(account);
 };
 
-createWallet("carteira03")
+createWallet("pedro")
+createWallet("reiser")
+

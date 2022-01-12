@@ -1,6 +1,5 @@
 const cardano = require("./cardano");
-
-const wallets = ["carteira01","carteira02","carteira03"];
+const wallets = require("./wallets");
 
 wallets.map((wallet) => {
   console.log("Ultimas transações da carteira: ",wallet)

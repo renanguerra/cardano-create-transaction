@@ -1,8 +1,5 @@
 const cardano = require("./cardano");
-
-//carteiras
-
-const wallets = ["carteira01","carteira02","carteira03"];
+const wallets = require("./wallets");
 
 wallets.map((wallet) => {
   const sender = cardano.wallet(wallet);
@@ -14,10 +11,10 @@ wallets.map((wallet) => {
   );
 
   //  carteira do drop
-  const receiver = "addr1v87y5s3wmp9tte5snqhxngkdmhw8p86zzxn4mh7kthpjchq39zgzj";
+  const receiver = "addr1qx0h74gvmyxv5ursv5etjzj8yzx42gv8hwdykdduq3tp6vvsjwhkz9y6ma5d3hnel3uux89un0e0sh2hx0825xlszvsqpr45l0";
 
   //  valor do drop
-  const dropValue = 18;
+  const dropValue = 66;
 
   const txInfo = {
     txIn: cardano.queryUtxo(sender.paymentAddr),

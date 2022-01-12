@@ -22,7 +22,7 @@ leitor.question("Para confirmar digite SIM: \n", function (answer) {
 
     // carteira para onde vai o NFT
     const receiver =
-      "addr1q9msndeamvjajjpuy4797nuqtcqugndju8qw3p4dvechgwttfc9eszk67a5t9v3vddjvct4s3s89yrr8wjanvj46qehqhyecka";
+      "addr1qyhakpc88d6gtxu3yh3zakc7h7xg5304twht7rwdyn6zp5v32datq2ygeu46ldhyyefr2j69p5t0aaa98h7rq70l232q6qzn8e";
 
     const txInfo = {
       txIn: cardano.queryUtxo(sender.paymentAddr),
@@ -30,16 +30,14 @@ leitor.question("Para confirmar digite SIM: \n", function (answer) {
         {
           address: sender.paymentAddr,
           value: {
-            lovelace: sender.balance().value.lovelace - (15846497 + 2000000 + 20000000),
+            lovelace: sender.balance().value.lovelace  - 2000000,
           },
         },
         {
           address: receiver,
           value: {
-            lovelace: (15846497 + 2000000 + 20000000) ,
-            "523433c68bb669f450ed0a51514a47b09aecb705d4ee7e7efe49e3d6.BuddyxCrypties149": 1,
-            "e54bcae2e9f4320346636bd9e662cd33a21fcd3a39f1e2ea19f7a0ee.POSS1OneEyedSharky0161": 1,
-            '276663aa662470ffdd3bc3f529e2cbe06c6f920e4625c00d3fc2c88f.Weasel578': 1,
+            lovelace: 2000000,
+            '46f96dbed1e14d3fe1ca8ed08e7db2f848b50769b51ebf6547728ba2.WoodCastleWLS10584': 1,
           },
         },
       ],
